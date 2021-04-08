@@ -30,7 +30,7 @@ public class Exercise2WebUiTest {
     }
 
     @Test(dataProviderClass = UsersDataProvider.class, dataProvider = "usersData")
-    public void verify(UserModel user) {
+    public void verifyAbilityToFillContactUsForm(UserModel user) {
         navigationAction.openHomePage();
         homePage.verifyFlyingPersonalizedHeaderVisible();
         homePage.verifyDiscoverPossibilitiesHeaderVisible();
