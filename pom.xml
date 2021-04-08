@@ -12,7 +12,7 @@
         <testng.version>7.3.0</testng.version>
         <compiler.version>3.8.0</compiler.version>
         <java.version>11</java.version>
-        <webdriver.manager.version>3.2.0</webdriver.manager.version>
+        <webdriver.manager.version>4.4.0</webdriver.manager.version>
         <selenium.version>3.141.59</selenium.version>
         <restassured.version>4.3.3</restassured.version>
         <surefire.version>2.22.1</surefire.version>
