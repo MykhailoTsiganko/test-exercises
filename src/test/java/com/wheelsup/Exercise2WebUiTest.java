@@ -28,7 +28,7 @@ public class Exercise2WebUiTest {
         learnMoreFormPage = new LearnMoreFormPage();
     }
 
-    @Test(dataProviderClass = UsersDataProvider.class, dataProvider = "usersData", invocationCount = 5)
+    @Test(dataProviderClass = UsersDataProvider.class, dataProvider = "usersData")
     public void verify(UserModel user) {
         navigationAction.openHomePage();
         homePage.verifyFlyingPersonalizedHeaderVisible();
