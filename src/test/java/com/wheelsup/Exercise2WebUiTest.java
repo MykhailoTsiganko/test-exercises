@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 public class Exercise2WebUiTest {
 
+    private static String REQUEST_INFO_PATH = "request-info";
     private HomePage homePage;
     private CoreMembershipPage coreMembershipPage;
     private NavigationAction navigationAction;
@@ -40,7 +41,7 @@ public class Exercise2WebUiTest {
         coreMembershipPage.verifyPrivateAviationSectionVisible();
         coreMembershipPage.verifyLearnMoreTodaySectionIsVisible();
         coreMembershipPage.fillInLearnMoreFormAndClickContinue(user.getFirstName(), user.getLastName());
-        commonActions.verifyBrowserUrlContainsPath("request-info");
+        commonActions.verifyBrowserUrlContainsPath(REQUEST_INFO_PATH);
         learnMoreFormPage.verifyOpened();
         learnMoreFormPage.fillInnAllFieldsAndClose(user);
         coreMembershipPage.verifyOpened();

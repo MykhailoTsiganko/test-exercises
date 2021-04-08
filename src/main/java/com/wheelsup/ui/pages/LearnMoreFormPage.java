@@ -64,7 +64,6 @@ public class LearnMoreFormPage extends BasePage {
     private By followingDropDown = By.xpath("./following::*[contains(@class,'dropdown-box-list')]");
     private String innerRadioButton = ".//*[contains(@value,'%s')]/ancestor::*[@class='containerline']";
 
-
     public void verifyOpened() {
         WebElementUtils.waitUntilDisplayed(emailInput);
     }
